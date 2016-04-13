@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "BusinessIntelligenceDM2", "BusinessIntelligenceDM2.dtproj", "{A1482861-0988-460C-9249-E9E6E5C9844A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1482861-0988-460C-9249-E9E6E5C9844A}.Development|Default.ActiveCfg = Development
+		{A1482861-0988-460C-9249-E9E6E5C9844A}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
