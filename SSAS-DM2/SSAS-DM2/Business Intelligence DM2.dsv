@@ -1,0 +1,124 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3c08aab3-b245-46a8-bb70-80356a1157f8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Business Intelligence DM2</ID>
+  <Name>Business Intelligence DM2</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Business Intelligence DM2</DataSourceID>
+  <Schema>
+    <xs:schema id="Business_x0020_Intelligence_x0020_DM2" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Business_x0020_Intelligence_x0020_DM2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="b5ee1db1-6a75-41ba-bb71-1f7c730ec831">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DimSales" msprop:design-time-name="949f11fb-bc4e-488c-90b2-c95babad7ab7" msprop:DbTableName="DimSales" msprop:FriendlyName="DimSales" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BusinessEntityID" msprop:design-time-name="df6a6688-0103-4021-a2a1-f86b22f74053" msprop:DbColumnName="BusinessEntityID" msprop:FriendlyName="BusinessEntityID" type="xs:int" />
+                  <xs:element name="TerritoryID" msprop:design-time-name="8afbd13a-a099-4c4c-b9c4-a8d2ab6ea9fa" msprop:DbColumnName="TerritoryID" msprop:FriendlyName="TerritoryID" type="xs:int" minOccurs="0" />
+                  <xs:element name="SalesQuota" msprop:design-time-name="a09959bc-f571-41cf-9707-8cb841eb51bd" msprop:DbColumnName="SalesQuota" msprop:FriendlyName="SalesQuota" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Bonus" msprop:design-time-name="e2aa6fc7-8181-44a8-aed1-19ff757941bd" msprop:DbColumnName="Bonus" msprop:FriendlyName="Bonus" type="xs:decimal" />
+                  <xs:element name="SalesYTD" msprop:design-time-name="f7302c36-ed62-4e39-ab24-ca9367681864" msprop:DbColumnName="SalesYTD" msprop:FriendlyName="SalesYTD" type="xs:decimal" />
+                  <xs:element name="SalesLastYear" msprop:design-time-name="194c2a10-f494-453c-a2f8-c85bd02d814f" msprop:DbColumnName="SalesLastYear" msprop:FriendlyName="SalesLastYear" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimTerritory" msprop:design-time-name="d3013930-942f-43d1-88e4-91b96124b24b" msprop:DbTableName="DimTerritory" msprop:FriendlyName="DimTerritory" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TerritoryID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="c185a127-e518-40b9-b446-8edb1a8c2b87" msprop:DbColumnName="TerritoryID" msprop:FriendlyName="TerritoryID" type="xs:int" />
+                  <xs:element name="Name" msprop:design-time-name="1964102e-360c-491d-9d7b-615e0d31ea68" msprop:DbColumnName="Name" msprop:FriendlyName="Name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CountryRegionCode" msprop:design-time-name="8856035c-437f-4591-8e84-2a5b6f62b5d3" msprop:DbColumnName="CountryRegionCode" msprop:FriendlyName="CountryRegionCode">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Group" msprop:design-time-name="178018c5-867a-4f98-a748-d5bc7679469b" msprop:DbColumnName="Group" msprop:FriendlyName="Group">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SalesYTD" msprop:design-time-name="5a171f44-875e-49b9-bbc7-da6a0e703095" msprop:DbColumnName="SalesYTD" msprop:FriendlyName="SalesYTD" type="xs:decimal" />
+                  <xs:element name="SalesLastYear" msprop:design-time-name="858869a8-b8d0-4dc7-9c47-70a03a13381d" msprop:DbColumnName="SalesLastYear" msprop:FriendlyName="SalesLastYear" type="xs:decimal" />
+                  <xs:element name="CostYTD" msprop:design-time-name="04351c9f-c644-44be-967c-0ea3e1b4d39b" msprop:DbColumnName="CostYTD" msprop:FriendlyName="CostYTD" type="xs:decimal" />
+                  <xs:element name="CostLastYear" msprop:design-time-name="29d48f21-5714-44cb-8070-a5adc8e30119" msprop:DbColumnName="CostLastYear" msprop:FriendlyName="CostLastYear" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_SalesTerritoryFact" msprop:design-time-name="6ca9302a-728c-4d6c-946d-69f8a53129f4" msprop:DbTableName="SalesTerritoryFact" msprop:FriendlyName="SalesTerritoryFact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BusinessEntityID" msprop:design-time-name="d5d210ad-bcf5-454a-866a-aa978680a43d" msprop:DbColumnName="BusinessEntityID" msprop:FriendlyName="BusinessEntityID" type="xs:int" />
+                  <xs:element name="TerritoryID" msprop:design-time-name="3bdab175-f63f-4fed-8626-83d9172249ec" msprop:DbColumnName="TerritoryID" msprop:FriendlyName="TerritoryID" type="xs:int" />
+                  <xs:element name="NoSalestoUS" msprop:design-time-name="02068e78-b7e0-445f-98d0-ae438eaf3cb6" msprop:DbColumnName="NoSalestoUS" msprop:FriendlyName="NoSalestoUS" type="xs:int" />
+                  <xs:element name="NoSalestoEU" msprop:design-time-name="10916629-3fc7-4a48-bf91-05fcc058159f" msprop:DbColumnName="NoSalestoEU" msprop:FriendlyName="NoSalestoEU" type="xs:int" />
+                  <xs:element name="NoSalestoPacific" msprop:design-time-name="fcacbbe6-56e8-4f28-ace8-96a3282f65c9" msprop:DbColumnName="NoSalestoPacific" msprop:FriendlyName="NoSalestoPacific" type="xs:int" />
+                  <xs:element name="TotalNumberSales" msprop:design-time-name="610a20ec-e3ce-40ad-ba44-cac23825e630" msprop:DbColumnName="TotalNumberSales" msprop:FriendlyName="TotalNumberSales" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimTerritory" />
+          <xs:field xpath="TerritoryID" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="DimSales-DimTerritory" msdata:parent="dbo_DimTerritory" msdata:child="dbo_DimSales" msdata:parentkey="TerritoryID" msdata:childkey="TerritoryID" />
+          <msdata:Relationship name="SalesTerritoryFact-DimTerritory" msdata:parent="dbo_DimTerritory" msdata:child="dbo_SalesTerritoryFact" msdata:parentkey="TerritoryID" msdata:childkey="TerritoryID" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <Business_x0020_Intelligence_x0020_DM2 xmlns="" />
+  </Schema>
+</DataSourceView>
